@@ -14,7 +14,9 @@
     /*margin-top: 50px;*/
     margin-bottom: 50px;
     margin-right: 20%;
-    width: 50%;
+    max-width: 50%;
+    /*max-width: 26%;*/
+    
     justify-content: center;
     align-content: center;
     /*box-shadow: 30px 30px 0px 0px #00000002;*/
@@ -29,6 +31,8 @@
 .card-header {
     background-color: black;
     transform: translateZ(6);
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .cardb {
@@ -50,8 +54,12 @@ h1 {
     font-size: 28pt;
 }
 
+#myUL {
+    list-style: url('dash.gif');
+}
+
 ul {
-    list-style-image: url('dash.gif');
+    
     position: fixed;
 }
 
@@ -87,7 +95,7 @@ li:hover::before {
     transform: scaleX(1);
 }
 
-#myUL>* {
+/*#myUL>* {
     position: relative;
 }
 
@@ -98,4 +106,30 @@ li:hover::before {
     background-image: url("dash.gif");
     position: absolute;
     right: 100%;
+}*/
+
+#ftCon {
+	font-family: 'comfortaa';
+}
+
+
+footer {
+	background-color: #313639;
+	margin: 0 auto;
+	bottom: 0;
+	width: 100%;
+	justify-self: flex-end;
+	flex-grow: 1;
+	padding: 10px;
+
+	margin-top: auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+footer ul {
+	display: inline-block;
+	vertical-align: top;
+
 }
